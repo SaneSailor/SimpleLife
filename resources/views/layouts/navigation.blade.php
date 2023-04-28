@@ -5,7 +5,7 @@
             <div class="flex">
                 <!-- Brand ID -->
                 <div class="shrink-0 flex items-center">
-                    <a href="{{ route('notes.index') }}">
+                    <a href="{{ route('welcome.index') }}">
                         <h1 class="text-5xl font-mono font-bold">
                             SL
                         </h1>
@@ -16,6 +16,9 @@
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('notes.index')" :active="request()->routeIs('notes.index')">
                         {{ __('Notes') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('trashed.index')" :active="request()->routeIs('trashed.index')">
+                        {{ __('Trash') }}
                     </x-nav-link>
                 </div>
             </div>
