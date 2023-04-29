@@ -28,9 +28,9 @@
                     @endauth
                 </div>
             @endif
-            <h1 class="text-5xl">
+            <a href="{{ route('welcome.index') }}" class="text-6xl">
                 SimpleLife
-            </h1>
+            </a>
         </div>
     </body>
 </html>
